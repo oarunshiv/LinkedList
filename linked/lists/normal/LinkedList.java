@@ -18,6 +18,8 @@ public class LinkedList{
 		int val = ((Integer)value).intValue();
 		Node node = new Node();
 		node.data = val;
+rfhreiuh
+efhirfhi
 		node.next = null;
 		if(Head == null)
 			Head = node;
