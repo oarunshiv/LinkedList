@@ -13,11 +13,39 @@ public class LinkedList{
 		Head = node;
 		size++;
 	}
-	
+//****************************************	
+public void toCircular(Node Head)
+
+{
+
+Node wl=Head;
+while(wl.next!=null)
+wl=wl.next;
+wl.next=Head;
+
+}
+
+public Node split(Node Head)
+{
+
+Node wl=Head;
+int i=size/2;
+while(i>0)
+{
+wl=wl.next;
+
+}
+Node Head2;
+Head2=wl.next;
+wl.next=null;
+return Head2;
+}
+	//******************************
 	public void sortedInsert(Object value){
 		int val = ((Integer)value).intValue();
 		Node node = new Node();
 		node.data = val;
+
 		node.next = null;
 		if(Head == null)
 			Head = node;
